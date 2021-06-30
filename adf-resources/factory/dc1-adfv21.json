@@ -1,0 +1,9 @@
+{
+	"name": "dc1-adfv21",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5aa725b0-aae1-4381-be12-1654567db8e0",
+		"tenantId": "db05faca-c82a-4b9d-b9c5-0f64b6755421"
+	}
+}

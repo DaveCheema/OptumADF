@@ -1,0 +1,25 @@
+{
+	"name": "dc_blob_storage_ds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "dc1_blob_storage_ls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "DaveToaster.csv",
+				"container": "output"
+			},
+			"columnDelimiter": ",",
+			"rowDelimiter": "\r\n",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

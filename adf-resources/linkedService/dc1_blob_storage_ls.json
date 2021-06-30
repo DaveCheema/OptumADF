@@ -1,0 +1,22 @@
+{
+	"name": "dc1_blob_storage_ls",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"sasUri": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "dc1_secrets_kv",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "dc1-blob-storage-url-and-token"
+			}
+		},
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
