@@ -1,0 +1,21 @@
+{
+	"name": "Snowflake1",
+	"properties": {
+		"annotations": [],
+		"type": "Snowflake",
+		"typeProperties": {
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "dc1_secrets_kv",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "dc1-nonprod-snowflake-db-connection-string"
+			}
+		},
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
