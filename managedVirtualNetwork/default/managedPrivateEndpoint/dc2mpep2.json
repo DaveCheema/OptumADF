@@ -1,0 +1,10 @@
+{
+	"name": "dc2mpep2",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/7bd3d2cf-2917-48aa-b2d0-6694b313f56e/resourceGroups/dc2-rg/providers/Microsoft.Storage/storageAccounts/dc2datastorage2",
+		"groupId": "blob",
+		"fqdns": [
+			"dc2datastorage2.blob.core.windows.net"
+		]
+	}
+}
